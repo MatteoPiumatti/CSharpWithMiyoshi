@@ -1,6 +1,6 @@
 /*
 Matteo Piumatti
-date completed:9/25/2022
+date completed:9/26/2022
 date started: 9/25/2022
 pysudocode: declares 1 bool, 3 int, 3 char, 3 string, 3 double. it checks the cariable test, 
 and prints my initials.
@@ -39,25 +39,43 @@ int main()
     int myHieght = 165; //cm
     int myWeight = 140; //lbs
     {
-        Console.WriteLine("my age",myAge);
-        Console.WriteLine("my hieght in cm",myHieght);
-        Console.WriteLine("my weight in pounds",myWeight);
+        Console.WriteLine("my age:",myAge);
+        Console.WriteLine("my hieght in cm:",myHieght);
+        Console.WriteLine("my weight in pounds:",myWeight);
     }
+    {
+
+    
 
     char firstLetterOfMyName = 'M';
     char firstLetterOfLastName = 'P';
     char dot = '.';
 
     Console.WriteLine("my initials {0}{1}{2}",firstLetterOfMyName,firstLetterOfLastName,dot);
+    }
 
 
-
+{
     string favoriteStroke = "freestyle";
     string leastFavoriteStroke = "backstroke";
     string favoritePlaceToVisit = "Hawaii";
 
     Console.WriteLine("my favorite swimming stroke",favoriteStroke);
-    Console.WriteLine("my least favorite stroke")
+    Console.WriteLine("my least favorite stroke", leastFavoriteStroke);
+    Console.WriteLine("my favorite vacation place",favoritePlaceToVisit);
+}
+
+    double myFastestSwim = 1.14; //100 yard freestyle
+    double theAmountOfTimeIveBeenAlive = 4.418e+8; // this is in seconds
+    double theAmountOfWaterIDrink = 2.75; // liters daily
+
+{
+    Console.WriteLine("my fastest swim time for 100 yard freestyle",myFastestSwim);
+    Console.WriteLine("the amount of seconds i have been alive from 9/26/2022 3:10 PM",theAmountOfTimeIveBeenAlive);
+    Console.WriteLine("the amount of liters of water i drink daily",theAmountOfWaterIDrink);
+    
+}
+
 
 
 
