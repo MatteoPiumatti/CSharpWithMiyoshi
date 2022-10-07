@@ -194,7 +194,7 @@ namespace MoreRandomstuff
             Console.WriteLine("choose how many People will go on this trip: ");
             int intmax = Convert.ToInt32(Console.ReadLine());
             b = intmax / peopleperbus;
-            Console.WriteLine("these are the amount of people that need to ride in vans: " + b);
+            Console.WriteLine("these are the amount of buses you need: " + b);
             v = intmax % peopleperbus; //alternative: intmax - b*60
             
             Console.WriteLine("these are the amount of people that will have to ride in vans: " + v)
@@ -222,7 +222,7 @@ namespace MoreRandomstuff
              mph = hours / miles;
              Console.WriteLine("you are going at around " + mph + " miles per hour" );
              mpg = miles / gal;
-             Console.WriteLine("you are using " + mpg {0:0.0} + " miles per gallon");
+             Console.WriteLine("you are using " + mpg  + " miles per gallon"){0:0.0};
 
         }
     }
