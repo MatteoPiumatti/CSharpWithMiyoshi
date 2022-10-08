@@ -44,7 +44,7 @@ static int Main()
 
     return 0;
 */
-{
+//{
     /*
  Matteo Piumatti
 problem: let user choose min value and max value 
@@ -193,11 +193,11 @@ namespace MoreRandomstuff
 
             Console.WriteLine("choose how many People will go on this trip: ");
             int intmax = Convert.ToInt32(Console.ReadLine());
-            b = intmax / peopleperbus;
+            int b = intmax / peopleperbus;
             Console.WriteLine("these are the amount of buses you need: " + b);
-            v = intmax % peopleperbus; //alternative: intmax - b*60
-            
-            Console.WriteLine("these are the amount of people that will have to ride in vans: " + v)
+            int v = intmax % peopleperbus; //alternative: intmax - b*60
+
+            Console.WriteLine("these are the amount of people that will have to ride in vans: " + v);
         }
     }
 
@@ -213,18 +213,18 @@ namespace MoreRandomstuff
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("how many miles have you traveled? ")
+             Console.WriteLine("how many miles have you traveled? ");
              int miles = Convert.ToInt32(Console.ReadLine());
-            Console.WriteLine(" how many hours did you spend on the trip? ");
-             int hours = Convert.ToInt32(Console.ReadLine());
-            Console.WriteLine("how many gallons did you use? ");
+             Console.WriteLine(" how many hours did you spend on the trip? ");
+             double hours = Convert.ToDouble(Console.ReadLine());
+             Console.WriteLine("how many gallons did you use? ");
              int gal = Convert.ToInt32(Console.ReadLine());
              
              
-             int mph = miles/hours;
-             Console.WriteLine("you are going at around {0} miles per hour", mph );
+             double mph = miles/hours;
+             Console.WriteLine("you are going at around {0:0} miles per hour", mph );
              double mpg = miles / gal;
-             Console.WriteLine("you are using {0:0.0} miles per gallon", mpg);
+             Console.WriteLine("your average consumption {0:0.0} miles per gallons ", mpg);
 
         }
     }
