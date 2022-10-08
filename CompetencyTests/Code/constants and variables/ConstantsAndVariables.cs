@@ -213,16 +213,18 @@ namespace MoreRandomstuff
     {
         static void Main(string[] args)
         {
+            Console.WriteLine("how many miles have you traveled? ")
              int miles = Convert.ToInt32(Console.ReadLine());
-            Console.WriteLine("how many miles have you traveled: " + miles);
+            Console.WriteLine(" how many hours did you spend on the trip? ");
              int hours = Convert.ToInt32(Console.ReadLine());
-            Console.WriteLine(" how many hours did you spend: " + hours );
+            Console.WriteLine("how many gallons did you use? ");
              int gal = Convert.ToInt32(Console.ReadLine());
-             Console.WriteLine("how many gallons did you use: " + gal);
-             mph = hours / miles;
-             Console.WriteLine("you are going at around " + mph + " miles per hour" );
-             mpg = miles / gal;
-             Console.WriteLine("you are using " + mpg  + " miles per gallon"){0:0.0};
+             
+             
+             int mph = miles/hours;
+             Console.WriteLine("you are going at around {0} miles per hour", mph );
+             double mpg = miles / gal;
+             Console.WriteLine("you are using {0:0.0} miles per gallon", mpg);
 
         }
     }
